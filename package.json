@@ -1,0 +1,18 @@
+{
+  "name": "nodelibc",
+  "version": "0.1.2",
+  "description": "nodelibc",
+  "files": [
+    "index.jsc",
+    "lib"
+  ],
+  "main": "index.jsc",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Johnny Cheng",
+  "license": "ISC",
+  "dependencies": {
+    "compilec": "1.0.0"
+  }
+}
