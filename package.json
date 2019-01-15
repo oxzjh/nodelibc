@@ -1,6 +1,6 @@
 {
   "name": "nodelibc",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "nodelibc",
   "files": [
     "index.jsc",
@@ -13,6 +13,6 @@
   "author": "Johnny Cheng",
   "license": "ISC",
   "dependencies": {
-    "compilec": "1.0.0"
+    "compilec": "1.1.0"
   }
 }
