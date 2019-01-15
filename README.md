@@ -88,7 +88,12 @@ const server = new nodelib.SocketWS(3000, (socket, data) => {
 // npm install redis
 const nodelib = require('nodelibc');
 
-global.redis = new nodelib.Redis('cachefile.json');
+global.redis = new nodelib.Redis({
+    host:'127.0.0.1',
+    // password:'',
+    db:1,
+    prefix:'prefix_'
+});
 
 redis.set('key1', 'some value', 5);
 redis.incr('key2');
@@ -102,7 +107,7 @@ console.log(cache.get('key2'));
 // npm install mysql
 const nodelib = require('nodelibc');
 
-global.mysql = new nodelib.Mysql('cachefile.json');
+global.mysql = new nodelib.Mysql('127.0.0.1', 'root', 'root', 'test');
 
 mysql.getArray('SELECT * FROM user', users => {
     console.log(users);
