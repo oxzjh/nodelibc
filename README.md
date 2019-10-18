@@ -25,7 +25,7 @@ cache.incr('key2');
 console.log(cache.get('key1'));
 console.log(cache.get('key2'));
 
-cache.save(true); // sync save cache to file
+cache.save(); // sync save cache to file
 ```
 
 #### 3. Http
